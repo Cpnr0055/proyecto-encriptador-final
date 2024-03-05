@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/reset.css">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador de texto</title>
+    </head>
+
+    <body>
+        <header class="cabecera-class">
+           <img src="/imagenes/logo.png" class="logo" alt="logo de alura"> 
+           <h1 class="texto-cabecera">Encriptador</h1>
+        </header>
+
+        <main class="main-class">
+            
+            <section>
+                <textarea class="class-campo-texto" id="campo-texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informativo">&#33; Solo letras minusculas y sin acentos</h6>
+            </div>    
+            <div class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Cifrar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Descifrar</button>
+            </div>   
+            </section>
+
+            <section class="campo-salida-mensaje">
+                <div>
+                    <textarea class="mensaje-class" id="campo-mensaje" placeholder="Ningún mensaje fue encontrado"></textarea>
+                </div>
+
+                <div class="class-imagen-mensaje" id="bloque-imgn-id">
+                    <img src="/imagenes/Muñeco.png" class="class-imgn">
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+                
+                <div calss="boton-copy-class">
+                    <button class="btnCopiar" onclick="btnCopy()">Copiar</button>
+                </div>
+            </section>
+            
+
+            
+        </main>
+
+        <footer class="footer-class">
+            <h3>2024 - Neri Raziel Cervantes Pacheco</h3>
+        </footer>
+        <script src="/encriptador.js"></script>
+    </body>
+
+    
+</html>
